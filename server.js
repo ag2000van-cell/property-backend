@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const https = require("https");
 
-const BOT_TOKEN = "7362366319:AAF2CzrzXNz4NMijXVhKwkKs3eBRzstCKWw";
-const CHAT_ID = "5039383557";
+const BOT_TOKEN = process.env.BOT_TOKEN || "7362366319:AAF2CzrzXNz4NMijXVhKwkKs3eBRzstCKWw";
+const CHAT_ID = process.env.CHAT_ID || "5039383557";
 const app = express();
 
 app.use(cors());
